@@ -11,8 +11,8 @@ class Feedback:
         self.header_frame = ttk.Frame(master)
         self.header_frame.pack()
 
-        #self.logo = PhotoImage(file="logo1.gif")
-        #ttk.Label(self.header_frame, image=self.logo)
+        self.logo = PhotoImage(file="logo1.gif")
+        ttk.Label(self.header_frame, image=self.logo)
         ttk.Label(self.header_frame, text='Thanks for joining us!', style='Header.TLabel').grid(row=0, column=1)
         ttk.Label(self.header_frame, wraplength=300, text='We glad you chose us for your online studies. '
                   "Please tell us what you think about our online courses").grid(row=1, column=1)
